@@ -14,7 +14,7 @@ namespace CodeBank
         public SplashScreen1()
         {
             InitializeComponent();
-            this.labelCopyright.Text = "Copyright © 1998-" + DateTime.Now.Year.ToString();
+            this.labelCopyright.Text = "Copyright © " + DateTime.Now.Year.ToString();
         }
 
         #region Overrides
@@ -28,6 +28,12 @@ namespace CodeBank
 
         public enum SplashScreenCommand
         {
+        }
+
+        private void SplashScreen1_Load(object sender, EventArgs e)
+        {
+            label1.Parent = peImage;
+            label1.BackColor = Color.Transparent;
         }
     }
 }

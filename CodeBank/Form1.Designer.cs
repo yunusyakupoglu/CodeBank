@@ -31,6 +31,9 @@ namespace CodeBank
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
@@ -39,26 +42,57 @@ namespace CodeBank
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemZoomTrackBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem3 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -74,10 +108,32 @@ namespace CodeBank
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonGroup1,
-            this.barEditItem1});
+            this.barEditItem1,
+            this.barButtonItem6,
+            this.barButtonItem7,
+            this.barButtonItem8,
+            this.barButtonItem9,
+            this.barButtonItem10,
+            this.barButtonItem11,
+            this.barButtonItem12,
+            this.barButtonItem13,
+            this.barButtonItem14,
+            this.barButtonItem15,
+            this.barButtonItem16,
+            this.barButtonItem17,
+            this.barButtonItem18,
+            this.barButtonItem20,
+            this.barButtonItem21,
+            this.barButtonItem22,
+            this.barButtonItem23,
+            this.barButtonItem19,
+            this.barButtonItem24,
+            this.barButtonItem25,
+            this.barEditItem2,
+            this.skinRibbonGalleryBarItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.ribbonControl1.MaxItemId = 10;
+            this.ribbonControl1.MaxItemId = 34;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 247;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -85,10 +141,40 @@ namespace CodeBank
             this.ribbonPage2,
             this.ribbonPage5,
             this.ribbonPage10});
+            this.ribbonControl1.QuickToolbarItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemFontEdit1});
+            this.repositoryItemFontEdit1,
+            this.repositoryItemZoomTrackBar1});
             this.ribbonControl1.Size = new System.Drawing.Size(1029, 158);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
+            // 
+            // backstageViewControl1
+            // 
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
+            this.backstageViewControl1.Location = new System.Drawing.Point(0, 158);
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.OwnerControl = this.ribbonControl1;
+            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem1;
+            this.backstageViewControl1.SelectedTabIndex = 0;
+            this.backstageViewControl1.Size = new System.Drawing.Size(1029, 496);
+            this.backstageViewControl1.TabIndex = 5;
+            this.backstageViewControl1.VisibleInDesignTime = true;
+            // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(208, 63);
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(820, 432);
+            this.backstageViewClientControl1.TabIndex = 1;
+            // 
+            // backstageViewTabItem1
+            // 
+            this.backstageViewTabItem1.Caption = "backstageViewTabItem1";
+            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
+            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
+            this.backstageViewTabItem1.Selected = true;
             // 
             // barButtonItem1
             // 
@@ -147,8 +233,299 @@ namespace CodeBank
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
             // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Kategori Ekle";
+            this.barButtonItem6.Id = 10;
+            this.barButtonItem6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Kategoriler";
+            this.barButtonItem7.Id = 11;
+            this.barButtonItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Kaydet";
+            this.barButtonItem8.Id = 12;
+            this.barButtonItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "Kaydet ve Çık";
+            this.barButtonItem9.Id = 13;
+            this.barButtonItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
+            this.barButtonItem9.Name = "barButtonItem9";
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "Formu Kapat";
+            this.barButtonItem10.Id = 14;
+            this.barButtonItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
+            this.barButtonItem10.Name = "barButtonItem10";
+            // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "Kaynak Kod Ekle";
+            this.barButtonItem11.Id = 15;
+            this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "Kaynak Kodlar";
+            this.barButtonItem12.Id = 16;
+            this.barButtonItem12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
+            this.barButtonItem12.Name = "barButtonItem12";
+            // 
+            // barButtonItem13
+            // 
+            this.barButtonItem13.Caption = "Formu Kapat";
+            this.barButtonItem13.Id = 17;
+            this.barButtonItem13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
+            this.barButtonItem13.Name = "barButtonItem13";
+            // 
+            // barButtonItem14
+            // 
+            this.barButtonItem14.Caption = "Kaydet";
+            this.barButtonItem14.Id = 18;
+            this.barButtonItem14.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem14.ImageOptions.SvgImage")));
+            this.barButtonItem14.Name = "barButtonItem14";
+            // 
+            // barButtonItem15
+            // 
+            this.barButtonItem15.Caption = "Kaydet ve Çık";
+            this.barButtonItem15.Id = 19;
+            this.barButtonItem15.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem15.ImageOptions.SvgImage")));
+            this.barButtonItem15.Name = "barButtonItem15";
+            // 
+            // barButtonItem16
+            // 
+            this.barButtonItem16.Caption = "Kullanıcı Bilgileri";
+            this.barButtonItem16.Id = 20;
+            this.barButtonItem16.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem16.ImageOptions.SvgImage")));
+            this.barButtonItem16.Name = "barButtonItem16";
+            // 
+            // barButtonItem17
+            // 
+            this.barButtonItem17.Caption = "Kullanıcı Bilgilerini Güncelle";
+            this.barButtonItem17.Id = 21;
+            this.barButtonItem17.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem17.ImageOptions.SvgImage")));
+            this.barButtonItem17.Name = "barButtonItem17";
+            // 
+            // barButtonItem18
+            // 
+            this.barButtonItem18.Caption = "Avatarı Güncelle";
+            this.barButtonItem18.Id = 22;
+            this.barButtonItem18.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem18.ImageOptions.SvgImage")));
+            this.barButtonItem18.Name = "barButtonItem18";
+            // 
+            // barButtonItem20
+            // 
+            this.barButtonItem20.Caption = "Parolayı Güncelle";
+            this.barButtonItem20.Id = 24;
+            this.barButtonItem20.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem20.ImageOptions.SvgImage")));
+            this.barButtonItem20.Name = "barButtonItem20";
+            // 
+            // barButtonItem21
+            // 
+            this.barButtonItem21.Caption = "Kaydet";
+            this.barButtonItem21.Id = 25;
+            this.barButtonItem21.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem21.ImageOptions.SvgImage")));
+            this.barButtonItem21.Name = "barButtonItem21";
+            // 
+            // barButtonItem22
+            // 
+            this.barButtonItem22.Caption = "Kaydet ve Çık";
+            this.barButtonItem22.Id = 26;
+            this.barButtonItem22.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem22.ImageOptions.SvgImage")));
+            this.barButtonItem22.Name = "barButtonItem22";
+            // 
+            // barButtonItem23
+            // 
+            this.barButtonItem23.Caption = "Formu Kapat";
+            this.barButtonItem23.Id = 27;
+            this.barButtonItem23.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem23.ImageOptions.SvgImage")));
+            this.barButtonItem23.Name = "barButtonItem23";
+            // 
+            // barButtonItem19
+            // 
+            this.barButtonItem19.Caption = "Yardım";
+            this.barButtonItem19.Id = 28;
+            this.barButtonItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.Image")));
+            this.barButtonItem19.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.LargeImage")));
+            this.barButtonItem19.Name = "barButtonItem19";
+            // 
+            // barButtonItem24
+            // 
+            this.barButtonItem24.Caption = "Geri Bildirim";
+            this.barButtonItem24.Id = 29;
+            this.barButtonItem24.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem24.ImageOptions.SvgImage")));
+            this.barButtonItem24.Name = "barButtonItem24";
+            // 
+            // barButtonItem25
+            // 
+            this.barButtonItem25.Caption = "Eğitimi Göster";
+            this.barButtonItem25.Id = 30;
+            this.barButtonItem25.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem25.ImageOptions.SvgImage")));
+            this.barButtonItem25.Name = "barButtonItem25";
+            // 
+            // barEditItem2
+            // 
+            this.barEditItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barEditItem2.Caption = "barEditItem2";
+            this.barEditItem2.Edit = this.repositoryItemZoomTrackBar1;
+            this.barEditItem2.EditWidth = 100;
+            this.barEditItem2.Id = 32;
+            this.barEditItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barEditItem2.ImageOptions.SvgImage")));
+            this.barEditItem2.Name = "barEditItem2";
+            this.barEditItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
+            // 
+            // repositoryItemZoomTrackBar1
+            // 
+            this.repositoryItemZoomTrackBar1.Name = "repositoryItemZoomTrackBar1";
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup6,
+            this.ribbonPageGroup7});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Kategori";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup1.ImageOptions.SvgImage")));
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Kategori";
+            // 
+            // ribbonPageGroup6
+            // 
+            this.ribbonPageGroup6.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup6.ImageOptions.SvgImage")));
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "Kaydet";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup7.ImageOptions.SvgImage")));
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "Çık";
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup8,
+            this.ribbonPageGroup9});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "Kaynak Kod";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup2.ImageOptions.SvgImage")));
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Kaynak Kod";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup8.ImageOptions.SvgImage")));
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem15);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "Kaydet";
+            // 
+            // ribbonPageGroup9
+            // 
+            this.ribbonPageGroup9.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup9.ImageOptions.SvgImage")));
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem13);
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "Çık";
+            // 
+            // ribbonPage5
+            // 
+            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup5,
+            this.ribbonPageGroup11,
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13,
+            this.ribbonPageGroup14});
+            this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Text = "Kullanıcı Bilgileri";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup5.ImageOptions.SvgImage")));
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem16);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem17);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPageGroup5.Text = "Kullanıcı Bilgileri";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup11.ImageOptions.SvgImage")));
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem18);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            this.ribbonPageGroup11.Text = "Avatar";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup12.ImageOptions.SvgImage")));
+            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem20);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            this.ribbonPageGroup12.Text = "Parola";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup13.ImageOptions.SvgImage")));
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem21);
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem22);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            this.ribbonPageGroup13.Text = "Kaydet";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup14.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup14.ImageOptions.SvgImage")));
+            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem23);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "Çık";
+            // 
+            // ribbonPage10
+            // 
+            this.ribbonPage10.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup10});
+            this.ribbonPage10.Name = "ribbonPage10";
+            this.ribbonPage10.Text = "Yardım";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup10.ImageOptions.Image")));
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem19);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem24);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem25);
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "Yardım";
+            // 
             // ribbonStatusBar1
             // 
+            this.ribbonStatusBar1.ItemLinks.Add(this.barEditItem2);
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 654);
             this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(2);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
@@ -177,77 +554,21 @@ namespace CodeBank
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
-            // ribbonPage1
+            // backstageViewTabItem2
             // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Kategori";
+            this.backstageViewTabItem2.Caption = "backstageViewTabItem1";
+            this.backstageViewTabItem2.Name = "backstageViewTabItem2";
             // 
-            // ribbonPageGroup1
+            // backstageViewTabItem3
             // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.backstageViewTabItem3.Caption = "backstageViewTabItem1";
+            this.backstageViewTabItem3.Name = "backstageViewTabItem3";
             // 
-            // ribbonPage2
+            // skinRibbonGalleryBarItem1
             // 
-            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup2});
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Kaynak Kod";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // ribbonPage5
-            // 
-            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5});
-            this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "Kullanıcı Bilgileri";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "ribbonPageGroup5";
-            // 
-            // ribbonPage10
-            // 
-            this.ribbonPage10.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup10});
-            this.ribbonPage10.Name = "ribbonPage10";
-            this.ribbonPage10.Text = "Yardım";
-            // 
-            // ribbonPageGroup10
-            // 
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
-            // 
-            // backstageViewControl1
-            // 
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
-            this.backstageViewControl1.Location = new System.Drawing.Point(65, 260);
-            this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.OwnerControl = this.ribbonControl1;
-            this.backstageViewControl1.Size = new System.Drawing.Size(480, 150);
-            this.backstageViewControl1.TabIndex = 2;
-            this.backstageViewControl1.VisibleInDesignTime = true;
-            // 
-            // backstageViewClientControl1
-            // 
-            this.backstageViewClientControl1.Location = new System.Drawing.Point(132, 63);
-            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(347, 86);
-            this.backstageViewClientControl1.TabIndex = 1;
-            // 
-            // backstageViewTabItem1
-            // 
-            this.backstageViewTabItem1.Caption = "backstageViewTabItem1";
-            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
-            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 33;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
             // Form1
             // 
@@ -266,9 +587,10 @@ namespace CodeBank
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,9 +620,42 @@ namespace CodeBank
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage10;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem3;
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
         private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem20;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem21;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem22;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem23;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem19;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem24;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem25;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
+        private DevExpress.XtraBars.BarEditItem barEditItem2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar1;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
     }
 }
 
