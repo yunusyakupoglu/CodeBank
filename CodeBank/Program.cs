@@ -14,6 +14,8 @@ namespace CodeBank
         [STAThread]
         static void Main()
         {
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "Office 2019 Colorful";
+            DevExpress.Skins.SkinManager.EnableFormSkins();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new XtraLoginForm());

@@ -29,19 +29,19 @@ namespace CodeBank
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::CodeBank.SplashScreen1), true, false);
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::CodeBank.SplashScreen2), true, false);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraLoginForm));
             this.xtraUserControl1 = new DevExpress.XtraEditors.XtraUserControl();
-            this.txtKullaniciAdi = new DevExpress.XtraEditors.TextEdit();
-            this.txtParola = new DevExpress.XtraEditors.TextEdit();
             this.svgImageBox1 = new DevExpress.XtraEditors.SvgImageBox();
             this.btnGirisYap = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtParola.Properties)).BeginInit();
+            this.txtParola = new DevExpress.XtraEditors.TextEdit();
+            this.txtKullaniciAdi = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtParola.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraUserControl1
@@ -52,20 +52,6 @@ namespace CodeBank
             this.xtraUserControl1.Size = new System.Drawing.Size(551, 226);
             this.xtraUserControl1.TabIndex = 0;
             this.xtraUserControl1.Load += new System.EventHandler(this.xtraUserControl1_Load);
-            // 
-            // txtKullaniciAdi
-            // 
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(251, 47);
-            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(197, 22);
-            this.txtKullaniciAdi.TabIndex = 1;
-            // 
-            // txtParola
-            // 
-            this.txtParola.Location = new System.Drawing.Point(251, 90);
-            this.txtParola.Name = "txtParola";
-            this.txtParola.Size = new System.Drawing.Size(197, 22);
-            this.txtParola.TabIndex = 2;
             // 
             // svgImageBox1
             // 
@@ -110,6 +96,20 @@ namespace CodeBank
             this.hyperlinkLabelControl1.TabIndex = 7;
             this.hyperlinkLabelControl1.Text = "Parolamı unuttum.";
             // 
+            // txtParola
+            // 
+            this.txtParola.Location = new System.Drawing.Point(251, 90);
+            this.txtParola.Name = "txtParola";
+            this.txtParola.Size = new System.Drawing.Size(197, 22);
+            this.txtParola.TabIndex = 2;
+            // 
+            // txtKullaniciAdi
+            // 
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(251, 47);
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(197, 22);
+            this.txtKullaniciAdi.TabIndex = 1;
+            // 
             // XtraLoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -129,9 +129,9 @@ namespace CodeBank
             this.Name = "XtraLoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Yap";
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtParola.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtParola.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

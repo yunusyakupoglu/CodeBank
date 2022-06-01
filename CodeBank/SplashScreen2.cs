@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace CodeBank
 {
-    public partial class SplashScreen1 : SplashScreen
+    public partial class SplashScreen2 : SplashScreen
     {
-        public SplashScreen1()
+        public SplashScreen2()
         {
             InitializeComponent();
-            this.labelCopyright.Text = "Copyright © " + DateTime.Now.Year.ToString();
+            this.labelCopyright.Text = DateTime.Now.Year.ToString();
         }
 
         #region Overrides
@@ -30,7 +30,7 @@ namespace CodeBank
         {
         }
 
-        private void SplashScreen1_Load(object sender, EventArgs e)
+        private void SplashScreen2_Load(object sender, EventArgs e)
         {
             label1.Parent = peImage;
             label1.BackColor = Color.Transparent;
