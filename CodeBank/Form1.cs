@@ -24,7 +24,9 @@ namespace CodeBank
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            XtraCategoriesForm categoriesForm = new XtraCategoriesForm();
+            categoriesForm.MdiParent = this;
+            categoriesForm.Show();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -32,5 +34,65 @@ namespace CodeBank
             Application.Exit();
         }
 
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraCategoryCreateForm categoryCreate = new XtraCategoryCreateForm();
+            categoryCreate.MdiParent = this;
+            if (Application.OpenForms[categoryCreate.Name] == null)
+            {
+                categoryCreate.Show();
+            }
+            else
+            {
+                categoryCreate.Focus();
+            }
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraCategoriesForm categoriesForm = new XtraCategoriesForm();
+            categoriesForm.MdiParent = this;
+
+            if (Application.OpenForms[categoriesForm.Name] == null)
+            {
+                categoriesForm.Show();
+            }
+            else
+            {
+                categoriesForm.Focus();
+            }
+        }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraSourceCodeCreateForm sourceCodeCreateForm = new XtraSourceCodeCreateForm();
+            sourceCodeCreateForm.MdiParent = this;
+
+            if (Application.OpenForms[sourceCodeCreateForm.Name] == null)
+            {
+                sourceCodeCreateForm.Show();
+            }
+            else
+            {
+                sourceCodeCreateForm.Focus();
+            }
+
+        }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraSourceCodesForm sourceCodesForm = new XtraSourceCodesForm();
+            sourceCodesForm.MdiParent = this;
+
+            if (Application.OpenForms[sourceCodesForm.Name] == null)
+            {
+                sourceCodesForm.Show();
+            }
+            else
+            {
+                sourceCodesForm.Focus();
+            }
+        }
     }
 }

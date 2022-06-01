@@ -35,14 +35,22 @@
   <ItemGroup>
     <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -72,11 +80,35 @@
     <Compile Include="SplashScreen2.Designer.cs">
       <DependentUpon>SplashScreen2.cs</DependentUpon>
     </Compile>
+    <Compile Include="XtraCategoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraCategoriesForm.Designer.cs">
+      <DependentUpon>XtraCategoriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraCategoryCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraCategoryCreateForm.Designer.cs">
+      <DependentUpon>XtraCategoryCreateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="XtraLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XtraLoginForm.Designer.cs">
       <DependentUpon>XtraLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraSourceCodeCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraSourceCodeCreateForm.Designer.cs">
+      <DependentUpon>XtraSourceCodeCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraSourceCodesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraSourceCodesForm.Designer.cs">
+      <DependentUpon>XtraSourceCodesForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -95,8 +127,20 @@
     <EmbeddedResource Include="SplashScreen2.resx">
       <DependentUpon>SplashScreen2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XtraCategoriesForm.resx">
+      <DependentUpon>XtraCategoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraCategoryCreateForm.resx">
+      <DependentUpon>XtraCategoryCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XtraLoginForm.resx">
       <DependentUpon>XtraLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraSourceCodeCreateForm.resx">
+      <DependentUpon>XtraSourceCodeCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraSourceCodesForm.resx">
+      <DependentUpon>XtraSourceCodesForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
