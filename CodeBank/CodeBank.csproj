@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,6 +54,12 @@
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -98,6 +107,12 @@
     <Compile Include="XtraLoginForm.Designer.cs">
       <DependentUpon>XtraLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="XtraPasswordUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraPasswordUpdateForm.Designer.cs">
+      <DependentUpon>XtraPasswordUpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="XtraSourceCodeCreateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +124,24 @@
     </Compile>
     <Compile Include="XtraSourceCodesForm.Designer.cs">
       <DependentUpon>XtraSourceCodesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserImageUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraUserImageUpdateForm.Designer.cs">
+      <DependentUpon>XtraUserImageUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserInformationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraUserInformationsForm.Designer.cs">
+      <DependentUpon>XtraUserInformationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraUserUpdateForm.Designer.cs">
+      <DependentUpon>XtraUserUpdateForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -136,12 +169,25 @@
     <EmbeddedResource Include="XtraLoginForm.resx">
       <DependentUpon>XtraLoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XtraPasswordUpdateForm.resx">
+      <DependentUpon>XtraPasswordUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XtraSourceCodeCreateForm.resx">
       <DependentUpon>XtraSourceCodeCreateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XtraSourceCodesForm.resx">
       <DependentUpon>XtraSourceCodesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserImageUpdateForm.resx">
+      <DependentUpon>XtraUserImageUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserInformationsForm.resx">
+      <DependentUpon>XtraUserInformationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserUpdateForm.resx">
+      <DependentUpon>XtraUserUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -161,5 +207,19 @@
   <ItemGroup>
     <None Include="Resources\quarteryazilim2022dark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{F3056C93-F9CD-450B-A505-A555FEAAE8A0}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>

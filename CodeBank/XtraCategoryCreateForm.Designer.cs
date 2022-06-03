@@ -114,6 +114,7 @@ namespace CodeBank
             this.Controls.Add(this.textEdit1);
             this.Name = "XtraCategoryCreateForm";
             this.Text = "XtraCategoryCreateForm";
+            this.Load += new System.EventHandler(this.XtraCategoryCreateForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();

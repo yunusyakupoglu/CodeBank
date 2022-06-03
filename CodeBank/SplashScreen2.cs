@@ -32,7 +32,7 @@ namespace CodeBank
 
         private void SplashScreen2_Load(object sender, EventArgs e)
         {
-            label1.Parent = peImage;
+            label1.Parent = peImage; 
             label1.BackColor = Color.Transparent;
         }
     }

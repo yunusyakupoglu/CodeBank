@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL.Service;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,16 @@ namespace CodeBank
 {
     public partial class XtraCategoryCreateForm : DevExpress.XtraEditors.XtraForm
     {
+        //AppDbContext context = new AppDbContext();
+        //CategoryService categoryService = new CategoryService();
         public XtraCategoryCreateForm()
         {
             InitializeComponent();
+        }
+
+        private void XtraCategoryCreateForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

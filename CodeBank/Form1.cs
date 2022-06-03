@@ -94,5 +94,65 @@ namespace CodeBank
                 sourceCodesForm.Focus();
             }
         }
+
+        private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraUserInformationsForm userInformationsForm = new XtraUserInformationsForm();
+            userInformationsForm.MdiParent = this;
+
+            if (Application.OpenForms[userInformationsForm.Name] == null)
+            {
+                userInformationsForm.Show();
+            }
+            else
+            {
+                userInformationsForm.Focus();
+            }
+        }
+
+        private void barButtonItem17_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraUserUpdateForm userUpdateForm = new XtraUserUpdateForm();
+            userUpdateForm.MdiParent = this;
+
+            if (Application.OpenForms[userUpdateForm.Name] == null)
+            {
+                userUpdateForm.Show();
+            }
+            else
+            {
+                userUpdateForm.Focus();
+            }
+        }
+
+        private void barButtonItem18_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraUserImageUpdateForm userImageUpdateForm = new XtraUserImageUpdateForm();
+            userImageUpdateForm.MdiParent = this;
+
+            if (Application.OpenForms[userImageUpdateForm.Name] == null)
+            {
+                userImageUpdateForm.Show();
+            }
+            else
+            {
+                userImageUpdateForm.Focus();
+            }
+        }
+
+        private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraPasswordUpdateForm passwordUpdateForm = new XtraPasswordUpdateForm();
+            passwordUpdateForm.MdiParent = this;
+
+            if (Application.OpenForms[passwordUpdateForm.Name] == null)
+            {
+                passwordUpdateForm.Show();
+            }
+            else
+            {
+                passwordUpdateForm.Focus();
+            }
+        }
     }
 }
