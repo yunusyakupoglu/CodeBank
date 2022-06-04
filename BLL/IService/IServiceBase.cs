@@ -1,4 +1,5 @@
 ﻿using DAL;
+using DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace BLL.IService
 {
     public interface IServiceBase<TContext, TEntity>
         where TContext : AppDbContext, new()
-        where TEntity : class, new()
+        where TEntity : class, IEntity, new()
     {
         List<TEntity> GetAll(TContext context, Expression<Func<TEntity, bool>> filter = null);
         TEntity GetByFilter(TContext context, Expression<Func<TEntity, bool>> filter);
-        void AddOrUpdate(TContext context, TEntity entity);
+        bool AddOrUpdate(TContext context, TEntity entity);
         void Delete(TContext context, Expression<Func<TEntity, bool>> filter);
         void Save(TContext context);
     }

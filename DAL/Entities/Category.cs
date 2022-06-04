@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    public class Category : EntityBase
+    public class Category : EntityBase, IEntity
     {
         public string CategoryName { get; set; }
-        public string ImgUrl { get; set; }
         public ICollection<SourceCode> SourceCodes { get; set; }
     }
 }

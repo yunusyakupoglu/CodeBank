@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    public class SourceCode : EntityBase
+    public class SourceCode : EntityBase, IEntity
     {
         public string Title { get; set; }
         public string Content { get; set; }

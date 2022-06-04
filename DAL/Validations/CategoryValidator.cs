@@ -12,7 +12,8 @@ namespace DAL.Validations
     {
         public CategoryValidator()
         {
-
+            RuleFor(x => x.CategoryName).NotEmpty().WithMessage("Kategori adı boş geçilmemelidir.");
+            RuleFor(x => x.CategoryName).NotNull().WithMessage("Kategori adı null değer döndüremez.");
         }
     }
 }

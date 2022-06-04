@@ -1,5 +1,8 @@
 ﻿using BLL.IService;
 using DAL;
+using DAL.Entities;
+using DAL.Tools;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
@@ -10,13 +13,20 @@ using System.Threading.Tasks;
 
 namespace BLL.Service
 {
-    public class ServiceBase<TContext, TEntity> : IServiceBase<TContext, TEntity>
+    public class ServiceBase<TContext, TEntity, TValidator> : IServiceBase<TContext, TEntity>
          where TContext : AppDbContext, new()
-        where TEntity : class, new()
+        where TEntity : class, IEntity, new()
+        where TValidator : IValidator, new()
     {
-        public void AddOrUpdate(TContext context, TEntity entity)
+        public bool AddOrUpdate(TContext context, TEntity entity)
         {
-            context.Set<TEntity>().AddOrUpdate(entity);
+            TValidator validator = new TValidator();
+            bool ValidationResult = ValidatorTools.Validates(validator, entity);
+            if (ValidationResult)
+            {
+                context.Set<TEntity>().AddOrUpdate(entity);
+            }
+            return ValidationResult;
         }
 
         public void Delete(TContext context, Expression<Func<TEntity, bool>> filter)

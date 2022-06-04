@@ -16,7 +16,8 @@ namespace DAL.Configurations
             this.HasKey(x => x.Id);
             this.Property(x => x.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             this.Property(x => x.CategoryName).HasColumnType("NVARCHAR").HasMaxLength(350);
-            this.Property(x => x.ImgUrl).HasColumnType("NVARCHAR").HasMaxLength(350);
+
+            this.ToTable("Kategoriler");
         }
     }
 }

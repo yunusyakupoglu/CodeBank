@@ -46,6 +46,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,13 +60,33 @@
     <Compile Include="Configurations\SourceCodeConfiguration.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\IEntity.cs" />
     <Compile Include="Entities\SourceCode.cs" />
+    <Compile Include="Migrations\202206041359380_InitialCreate.cs" />
+    <Compile Include="Migrations\202206041359380_InitialCreate.designer.cs">
+      <DependentUpon>202206041359380_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206041432599_TableColumnNamesChanged.cs" />
+    <Compile Include="Migrations\202206041432599_TableColumnNamesChanged.designer.cs">
+      <DependentUpon>202206041432599_TableColumnNamesChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\ValidatorTools.cs" />
     <Compile Include="Validations\CategoryValidator.cs" />
+    <Compile Include="Validations\SourceCodeValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202206041359380_InitialCreate.resx">
+      <DependentUpon>202206041359380_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206041432599_TableColumnNamesChanged.resx">
+      <DependentUpon>202206041432599_TableColumnNamesChanged.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

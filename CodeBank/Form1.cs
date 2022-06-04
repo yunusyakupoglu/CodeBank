@@ -9,17 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using DevExpress.XtraEditors;
+using DAL.Entities;
+using DAL;
+using BLL.Service;
 
 namespace CodeBank
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        AppDbContext context = new AppDbContext();
+        Category category;
+        SourceCode sourceCode;
+
+        CategoryService categoryService = new CategoryService();
+        SourceCodeService sourceCodeService = new SourceCodeService();
         DialogResult[] dialog = {
             DialogResult.OK
         };
         public Form1()
         {
             InitializeComponent();
+            category = new Category();
+            sourceCode = new SourceCode();
         }
 
         private void Form1_Load(object sender, EventArgs e)

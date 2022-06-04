@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    public class EntityBase
+    public class EntityBase : IEntity
     {
         [Key]
         public int Id { get; set; }
