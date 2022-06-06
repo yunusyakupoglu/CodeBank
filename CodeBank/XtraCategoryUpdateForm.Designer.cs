@@ -1,7 +1,7 @@
 ﻿
 namespace CodeBank
 {
-    partial class XtraCategoryCreateForm
+    partial class XtraCategoryUpdateForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,27 @@ namespace CodeBank
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.txtCategoryName = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.ToggleIsArchived = new DevExpress.XtraEditors.ToggleSwitch();
-            this.xtraOpenFileDialog1 = new DevExpress.XtraEditors.XtraOpenFileDialog(this.components);
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCategoryName.Properties)).BeginInit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtCategoryName = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ToggleIsArchived.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCategoryName.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtCategoryName
+            // btnUpdate
             // 
-            this.txtCategoryName.EditValue = "";
-            this.txtCategoryName.Location = new System.Drawing.Point(172, 80);
-            this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.Size = new System.Drawing.Size(177, 22);
-            this.txtCategoryName.TabIndex = 0;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(80, 83);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(69, 16);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Kategori Adı";
+            this.btnUpdate.Location = new System.Drawing.Point(174, 192);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(177, 46);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // ToggleIsArchived
             // 
             this.ToggleIsArchived.EditValue = true;
-            this.ToggleIsArchived.Location = new System.Drawing.Point(172, 121);
+            this.ToggleIsArchived.Location = new System.Drawing.Point(174, 123);
             this.ToggleIsArchived.Name = "ToggleIsArchived";
             this.ToggleIsArchived.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ToggleIsArchived.Properties.Appearance.Options.UseFont = true;
@@ -66,44 +57,47 @@ namespace CodeBank
             this.ToggleIsArchived.Properties.OffText = "Pasif";
             this.ToggleIsArchived.Properties.OnText = "Aktif";
             this.ToggleIsArchived.Size = new System.Drawing.Size(120, 47);
-            this.ToggleIsArchived.TabIndex = 2;
+            this.ToggleIsArchived.TabIndex = 9;
             // 
-            // xtraOpenFileDialog1
+            // labelControl1
             // 
-            this.xtraOpenFileDialog1.FileName = "xtraOpenFileDialog1";
+            this.labelControl1.Location = new System.Drawing.Point(82, 85);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(69, 16);
+            this.labelControl1.TabIndex = 8;
+            this.labelControl1.Text = "Kategori Adı";
             // 
-            // btnSave
+            // txtCategoryName
             // 
-            this.btnSave.Location = new System.Drawing.Point(172, 190);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(177, 46);
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Kaydet";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.txtCategoryName.EditValue = "";
+            this.txtCategoryName.Location = new System.Drawing.Point(174, 82);
+            this.txtCategoryName.Name = "txtCategoryName";
+            this.txtCategoryName.Size = new System.Drawing.Size(177, 22);
+            this.txtCategoryName.TabIndex = 7;
             // 
-            // XtraCategoryCreateForm
+            // XtraCategoryUpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1393, 788);
-            this.Controls.Add(this.btnSave);
+            this.ClientSize = new System.Drawing.Size(1060, 666);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.ToggleIsArchived);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.txtCategoryName);
-            this.Name = "XtraCategoryCreateForm";
-            this.Text = "Kategori Ekle";
-            ((System.ComponentModel.ISupportInitialize)(this.txtCategoryName.Properties)).EndInit();
+            this.Name = "XtraCategoryUpdateForm";
+            this.Text = "XtraCategoryUpdateForm";
             ((System.ComponentModel.ISupportInitialize)(this.ToggleIsArchived.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCategoryName.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+
+        private DevExpress.XtraEditors.SimpleButton btnUpdate;
         private DevExpress.XtraEditors.ToggleSwitch ToggleIsArchived;
-        private DevExpress.XtraEditors.XtraOpenFileDialog xtraOpenFileDialog1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
         public DevExpress.XtraEditors.TextEdit txtCategoryName;
-        private DevExpress.XtraEditors.SimpleButton btnSave;
     }
 }

@@ -29,11 +29,6 @@ namespace CodeBank
         }
 
 
-        private void XtraCategoryCreateForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             category = new Category();
@@ -51,6 +46,14 @@ namespace CodeBank
                 categoryService.Save(context);
                 MessageBox.Show("Kategori kaydı başarılı.");
             }
+            XtraCategoriesForm form = (XtraCategoriesForm)Application.OpenForms["XtraCategoriesForm"];
+            foreach (Form FORM in Application.OpenForms)
+            {
+                if (FORM.GetType()==typeof(XtraCategoriesForm))
+                {
+                    form.KategoriListele();
+                }
+            }
         }
 
         private void ToggleIsArchived_Toggled(object sender, EventArgs e)
@@ -59,9 +62,9 @@ namespace CodeBank
             {
 
             }
-            else 
+            else
             {
-            
+
             }
         }
     }

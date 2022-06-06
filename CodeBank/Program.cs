@@ -18,7 +18,7 @@ namespace CodeBank
             DevExpress.Skins.SkinManager.EnableFormSkins();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new XtraLoginForm());
+            Application.Run(new Form1());
         }
     }
 }

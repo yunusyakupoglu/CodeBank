@@ -83,6 +83,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeBankDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodeBankDbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +114,12 @@
     <Compile Include="XtraCategoryCreateForm.Designer.cs">
       <DependentUpon>XtraCategoryCreateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="XtraCategoryUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraCategoryUpdateForm.Designer.cs">
+      <DependentUpon>XtraCategoryUpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="XtraLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +143,12 @@
     </Compile>
     <Compile Include="XtraSourceCodesForm.Designer.cs">
       <DependentUpon>XtraSourceCodesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraSourceCodeUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraSourceCodeUpdateForm.Designer.cs">
+      <DependentUpon>XtraSourceCodeUpdateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="XtraUserImageUpdateForm.cs">
       <SubType>Form</SubType>
@@ -174,6 +191,9 @@
     <EmbeddedResource Include="XtraCategoryCreateForm.resx">
       <DependentUpon>XtraCategoryCreateForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XtraCategoryUpdateForm.resx">
+      <DependentUpon>XtraCategoryUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XtraLoginForm.resx">
       <DependentUpon>XtraLoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +206,9 @@
     <EmbeddedResource Include="XtraSourceCodesForm.resx">
       <DependentUpon>XtraSourceCodesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XtraSourceCodeUpdateForm.resx">
+      <DependentUpon>XtraSourceCodeUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XtraUserImageUpdateForm.resx">
       <DependentUpon>XtraUserImageUpdateForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +218,17 @@
     <EmbeddedResource Include="XtraUserUpdateForm.resx">
       <DependentUpon>XtraUserUpdateForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CodeBankDbDataSet.xsc">
+      <DependentUpon>CodeBankDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CodeBankDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodeBankDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CodeBankDbDataSet.xss">
+      <DependentUpon>CodeBankDbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

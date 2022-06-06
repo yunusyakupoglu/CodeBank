@@ -670,6 +670,50 @@
         L3N2Zz4L
 </value>
   </data>
+  <data name="barButtonItem26.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS43
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAEEEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQ4cHgiIGhl
+        aWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciPg0KICA8cGF0aCBkPSJNMjEsMzFjMCwxLjEwNCwwLjg5NiwyLDIsMmgxN2MxLjEwNCwwLDIt
+        MC44OTYsMi0yVjE2YzAtMS4xMDQtMC44OTYtMi0yLTJIMjNjLTEuMTA0LDAtMiwwLjg5Ni0yLDJWMzF6
+        IiBmaWxsPSIjMDNBOUY0IiAvPg0KICA8cGF0aCBkPSJNNDIsMTYuOTc1VjE2YzAtMC40MjgtMC4xMzct
+        MC44MjMtMC4zNjctMS4xNDhsLTExLjI2NCw2LjkzMmwtNy41NDItNC42NTZMMjIuMTI1LDE5bDguNDU5
+        LDVMNDIsMTYuOTc1eiIgZmlsbD0iI0IzRTVGQyIgLz4NCiAgPHBhdGggZD0iTTI3IDQxLjQ2TDYgMzcu
+        NDYgNiA5LjQ2IDI3IDUuNDZ6IiBmaWxsPSIjMDI3N0JEIiAvPg0KICA8cGF0aCBkPSJNMjEuMjE2LDE4
+        LjMxMWMtMS4wOTgtMS4yNzUtMi41NDYtMS45MTMtNC4zMjgtMS45MTNjLTEuODkyLDAtMy40MDgsMC42
+        NjktNC41NTQsMi4wMDNjLTEuMTQ0LDEuMzM3LTEuNzE5LDMuMDg4LTEuNzE5LDUuMjQ2YzAsMi4wNDUs
+        MC41NjQsMy43MTQsMS42OSw0Ljk4NmMxLjEyNiwxLjI3MywyLjU5MiwxLjkxLDQuMzc4LDEuOTFjMS44
+        NCwwLDMuMzMxLTAuNjUyLDQuNDc0LTEuOTc1YzEuMTQzLTEuMzEzLDEuNzEyLTMuMDQzLDEuNzEyLTUu
+        MTk5QzIyLjg2OSwyMS4yODEsMjIuMzE4LDE5LjU5NSwyMS4yMTYsMTguMzExeiBNMTkuMDQ5LDI2Ljcz
+        NWMtMC41NjgsMC43NjktMS4zMzksMS4xNTItMi4zMTMsMS4xNTJjLTAuOTM5LDAtMS42OTktMC4zOTQt
+        Mi4yODUtMS4xODdjLTAuNTgxLTAuNzg1LTAuODctMS44NjEtMC44Ny0zLjIxMWMwLTEuMzM2LDAuMjg5
+        LTIuNDE0LDAuODctMy4yMjVjMC41ODYtMC44MSwxLjM2OC0xLjIxMSwyLjM1NS0xLjIxMWMwLjk2Miww
+        LDEuNzE4LDAuMzkzLDIuMjY3LDEuMTc4YzAuNTU1LDAuNzk1LDAuODMzLDEuODk1LDAuODMzLDMuMzFD
+        MTkuOTA3LDI0LjkwNiwxOS42MTgsMjUuOTY4LDE5LjA0OSwyNi43MzV6IiBmaWxsPSIjRkZGIiAvPg0K
+        PC9zdmc+Cw==
+</value>
+  </data>
+  <data name="barButtonItem27.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS43
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAGACAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQ4cHgiIGhl
+        aWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciPg0KICA8cGF0aCBkPSJNMjEuMjUsNDAuNDU0bDYuMTMtNi4xNDJjMC42OTQtMC42OTYsMC42
+        OTQtMS44MjMsMC0yLjUxOUwxMS4xNjUsMTUuNTQ3IGMtMC42OTQtMC42OTYtMS44Mi0wLjY5Ni0yLjUx
+        NCwwbC02LjEzLDYuMTQyYy0wLjY5NCwwLjY5Ni0wLjY5NCwxLjgyMywwLDIuNTE5bDE2LjIxNSwxNi4y
+        NDYgQzE5LjQzLDQxLjE1LDIwLjU1NSw0MS4xNSwyMS4yNSw0MC40NTR6IiBmaWxsPSIjMGQ0N2ExIiAv
+        Pg0KICA8cGF0aCBkPSJNMTguNzg4LDQwLjQ5OGwtNi4yMjMtNi4yMzVjLTAuNjY5LTAuNjctMC42Njkt
+        MS43NTYsMC0yLjQyNkwzNS44NTQsOC41MDIgYzAuNjY5LTAuNjcsMS43NTMtMC42NywyLjQyMSwwbDYu
+        MjIzLDYuMjM1YzAuNjY5LDAuNjcsMC42NjksMS43NTYsMCwyLjQyNkwyMS4yMDksNDAuNDk4IEMyMC41
+        NDEsNDEuMTY3LDE5LjQ1Nyw0MS4xNjcsMTguNzg4LDQwLjQ5OHoiIGZpbGw9IiMyOWI2ZjYiIC8+DQo8
+        L3N2Zz4L
+</value>
+  </data>
   <data name="ribbonPageGroup1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS43
@@ -861,6 +905,6 @@
 </value>
   </data>
   <metadata name="xtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>231, 17</value>
   </metadata>
 </root>

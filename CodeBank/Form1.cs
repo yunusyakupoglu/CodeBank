@@ -12,6 +12,7 @@ using DevExpress.XtraEditors;
 using DAL.Entities;
 using DAL;
 using BLL.Service;
+using System.Diagnostics;
 
 namespace CodeBank
 {
@@ -29,15 +30,9 @@ namespace CodeBank
         public Form1()
         {
             InitializeComponent();
+            Thread.Sleep(1000);
             category = new Category();
             sourceCode = new SourceCode();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            XtraCategoriesForm categoriesForm = new XtraCategoriesForm();
-            categoriesForm.MdiParent = this;
-            categoriesForm.Show();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -45,125 +40,91 @@ namespace CodeBank
             Application.Exit();
         }
 
+        void FormKontrol(Form AcilanForm)
+        {
+            bool Acikmi = false;
+            for (int i = 0; i < this.MdiChildren.Length; i++)
+            {
+                if (AcilanForm.Name == MdiChildren[i].Name)
+                {
+                    this.MdiChildren[i].Focus();
+                    Acikmi = true;
+                }
+            }
+            if (Acikmi == false)
+            {
+                AcilanForm.MdiParent = this;
+                AcilanForm.Show();
+            }
+            else
+            {
+                AcilanForm.Dispose();
+            }
+        }
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraCategoryCreateForm categoryCreate = new XtraCategoryCreateForm();
-            categoryCreate.MdiParent = this;
-            if (Application.OpenForms[categoryCreate.Name] == null)
-            {
-                categoryCreate.Show();
-            }
-            else
-            {
-                categoryCreate.Focus();
-            }
+            FormKontrol(categoryCreate);
         }
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraCategoriesForm categoriesForm = new XtraCategoriesForm();
-            categoriesForm.MdiParent = this;
+            FormKontrol(categoriesForm);
 
-            if (Application.OpenForms[categoriesForm.Name] == null)
-            {
-                categoriesForm.Show();
-            }
-            else
-            {
-                categoriesForm.Focus();
-            }
         }
 
         private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraSourceCodeCreateForm sourceCodeCreateForm = new XtraSourceCodeCreateForm();
-            sourceCodeCreateForm.MdiParent = this;
-
-            if (Application.OpenForms[sourceCodeCreateForm.Name] == null)
-            {
-                sourceCodeCreateForm.Show();
-            }
-            else
-            {
-                sourceCodeCreateForm.Focus();
-            }
+            FormKontrol(sourceCodeCreateForm);
 
         }
 
         private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraSourceCodesForm sourceCodesForm = new XtraSourceCodesForm();
-            sourceCodesForm.MdiParent = this;
-
-            if (Application.OpenForms[sourceCodesForm.Name] == null)
-            {
-                sourceCodesForm.Show();
-            }
-            else
-            {
-                sourceCodesForm.Focus();
-            }
+            FormKontrol(sourceCodesForm);
         }
 
         private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraUserInformationsForm userInformationsForm = new XtraUserInformationsForm();
-            userInformationsForm.MdiParent = this;
-
-            if (Application.OpenForms[userInformationsForm.Name] == null)
-            {
-                userInformationsForm.Show();
-            }
-            else
-            {
-                userInformationsForm.Focus();
-            }
+            FormKontrol(userInformationsForm);
         }
 
         private void barButtonItem17_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraUserUpdateForm userUpdateForm = new XtraUserUpdateForm();
-            userUpdateForm.MdiParent = this;
-
-            if (Application.OpenForms[userUpdateForm.Name] == null)
-            {
-                userUpdateForm.Show();
-            }
-            else
-            {
-                userUpdateForm.Focus();
-            }
+            FormKontrol(userUpdateForm);
         }
 
         private void barButtonItem18_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraUserImageUpdateForm userImageUpdateForm = new XtraUserImageUpdateForm();
-            userImageUpdateForm.MdiParent = this;
-
-            if (Application.OpenForms[userImageUpdateForm.Name] == null)
-            {
-                userImageUpdateForm.Show();
-            }
-            else
-            {
-                userImageUpdateForm.Focus();
-            }
+            FormKontrol(userImageUpdateForm);
         }
 
         private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraPasswordUpdateForm passwordUpdateForm = new XtraPasswordUpdateForm();
-            passwordUpdateForm.MdiParent = this;
+            FormKontrol(passwordUpdateForm);
+        }
 
-            if (Application.OpenForms[passwordUpdateForm.Name] == null)
-            {
-                passwordUpdateForm.Show();
-            }
-            else
-            {
-                passwordUpdateForm.Focus();
-            }
+        private void barButtonItem26_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Process.Start("C:\\Program Files\\Microsoft Office\\root\\Office16\\outlook.exe");
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Thread.Sleep(1000);
         }
     }
 }

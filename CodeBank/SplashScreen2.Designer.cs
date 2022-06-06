@@ -46,7 +46,7 @@ namespace CodeBank
             this.labelCopyright.Appearance.Options.UseFont = true;
             this.labelCopyright.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelCopyright.Location = new System.Drawing.Point(32, 348);
-            this.labelCopyright.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelCopyright.Margin = new System.Windows.Forms.Padding(4);
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(114, 33);
             this.labelCopyright.TabIndex = 6;
@@ -110,12 +110,12 @@ namespace CodeBank
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("TechnicBold", 36F);
+            this.label1.Font = new System.Drawing.Font("TechnicLite", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(133, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 65);
+            this.label1.Size = new System.Drawing.Size(310, 64);
             this.label1.TabIndex = 12;
             this.label1.Text = "Code Bank";
             // 
@@ -130,7 +130,7 @@ namespace CodeBank
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelCopyright);
             this.Controls.Add(this.progressBarControl);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SplashScreen2";
             this.Padding = new System.Windows.Forms.Padding(1);
             this.Text = "SplashScreen2";
